@@ -19,6 +19,6 @@ app.use('/api', v1Router);
 // 오류처리 미들웨어
 app.use(errorHandler);
 
-app.listen(config.host.port, () => {
+app.listen(config.host.port, '127.0.0.1', () => {
   console.log(`Server is running on port : ${config.host.port}`);
 });
